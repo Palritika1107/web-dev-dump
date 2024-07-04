@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            color: aliceblue;
+        }
+        section{
+            border : 2px solid red;
+            display: flex;
+            flex-direction: column;
+            /* padding : 34px 23px; */
+            margin : 3px 100px;
+            align-items: center;
+            justify-content: center;
+            height : 344px;
+            
+        }
+        section::before{
+            content: "";
+            background: url('https://source.unsplash.com/random') no-repeat center center/cover;
+            z-index: -1;
+            position:absolute;
+            top:0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.5;
+
+        }
+
+        li{
+            list-style : none ;
+            padding : 34px 23px;
+
+        }
+        .container{
+            display: flex;
+        }
+
+        /* section::before{
+            content: "this is a content";
+        } */
+
+        section::after{
+            content: "this is a content";
+        }
+
+        p{
+            text-align: center;
+        }
+
+
+    </style>
+</head>
+<body>
+ <header>
+    <div class="container">
+        <li class="item">Home</li>
+        <li class="item">About</li>
+        <li class="item">Contact</li>
+        <li class="item">Project</li>
+    </div>
+    
+  </header>
+  <section>
+    <h3>Para</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure ratione illum, praesentium nemo repudiandae blanditiis impedit suscipit qui adipisci vel optio quod possimus perspiciatis quibusdam architecto officia dicta aspernatur nulla mollitia voluptatibus a nisi?</p>
+
+</section>
+<hr>
+</body>
+</html>

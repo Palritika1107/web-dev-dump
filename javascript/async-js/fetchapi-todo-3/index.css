@@ -1,0 +1,47 @@
+*{
+    margin : 0px;
+    padding : 0px;
+}
+
+.container {
+    margin : 10px 10px;
+
+}
+
+main form {
+    margin : 10px 10px;
+}
+main input {
+
+    display : inline-block;
+    width : 500px;
+    height : 25px;
+    border-radius: 10px;
+
+}
+main button{
+    display : inline-block;
+    width : 150px;
+    height : 30px;
+    border-radius: 10px;
+    background-color: orange;
+}
+
+main li{
+    /* display : inline-block; */
+    border : 2px solid black;
+    /* height : 20px; */
+    /* width : 100px; */
+    margin : 10px 10px;
+}
+
+/* why is the following not working if I do main li .done {} */
+ .done{
+    /* display : inline-block; */
+    /* border : 2px solid black; */
+    /* height : 20px; */
+    /* width : 100px; */
+    /* margin: 10px 10px; */
+
+    background-color: gray;
+}

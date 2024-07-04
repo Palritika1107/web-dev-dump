@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color : red;
+            color : black;
+            height : 200px;
+            width : 200px;
+            display : flex;
+            justify-content : center;
+            align-items : center;
+
+            /* transition-property : background-color;
+            transition-duration: 1s;
+            transition-timing-function: ease-in; */
+
+            /* if I hover over .container when transition property is only background-color then height,width and border --radius will also change but smoot transition won't be there */
+
+            transition : all 1s ease-in; 
+
+        }
+
+        .container:hover{
+            background-color: green;
+            height : 450px;
+            width : 450px;
+            border-radius: 40%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>this is a box</h3>
+    </div>
+</body>
+</html>

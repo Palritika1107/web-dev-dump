@@ -1,0 +1,214 @@
+/* font-family: 'Karla', sans-serif; */
+*{
+    box-sizing: border-box;
+    margin : 0;
+    padding : 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+html {
+	font-size: 16px;
+	font-family: 'karla', sans-serif;
+}
+
+.container{
+    /* display : flex; 
+     flex-direction : column; */
+    display : grid;
+    grid-template-columns: 1fr 1fr;;
+    grid-template-areas: 
+    'box1 box1'
+    'box2 box3';
+    height: 500px;
+    width: 700px;
+    margin : 250px auto;
+    /* margin-top : 250px; */
+    background-color: black;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 20px 20px 50px gray;
+
+}
+
+.child{
+    display : grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-columns: repeat(auto-fit,min-max(400px,1fr)); */
+    flex : 1;
+    color: hsl(204, 43%, 93%);
+    
+}
+
+.boxes{
+     /* padding : 30px; */
+     text-align: justify;
+     font-weight: bold;
+     color: hsl(204, 43%, 93%);
+     padding: 30px 30px;
+     /* sets line height to 1.5 times text size */
+     line-height: 1.5; 
+}
+#box1{
+
+    background-color: aliceblue;
+    grid-area : box1;
+}
+
+#box2{
+    background-color:  hsl(179, 62%, 43%);
+    /* width: auto; */
+    grid-area : box2;
+    /* width : 50%; */
+}
+
+
+#box3{
+    background-color: #4abebd;
+    /* width: auto; */
+    grid-area : box3;
+    /* width : 50%; */
+
+}
+
+#box1 h3{
+    color : hsl(179, 62%, 43%);
+    /* font-weight: bold; */
+    line-height: 4;
+}
+
+#box1 h4{
+    color : hsl(71, 73%, 54%);
+    /* font-weight: bold; */
+    line-height: 2;
+}
+
+#box1 p {
+    color : hsl(204, 3%, 65%);
+  
+    font-weight: 500;
+}
+
+
+#box2 h4{
+    
+    line-height: 2;
+}
+
+#box2 h1{
+    font-weight: bolder;
+    line-height: 1.5;
+}
+
+
+#box2 h1 span{
+    /* color : hsl(202, 30%, 84%); */
+    /* color : hsl(204, 3%, 65%); */
+    /* color : hsl(218, 22%, 67%); */
+
+    color : hsl(203, 62%, 89%);
+
+    font-weight: 100;
+    font-size: 15px;
+}
+
+#box2 p{
+    line-height: 4;
+}
+
+#box2 .button{
+
+    height: 50px;
+    width: 200px;
+    background-color: hsl(71, 73%, 54%);
+    box-shadow: 0px 5px 100px gray;
+    border-radius: 5px;
+    text-align: center;
+    margin: auto;
+    padding : 15px ;
+    /* line-height: 2; */
+}
+
+#box3 p{
+    /* color : hsl(218, 22%, 67%); */
+    color : hsl(203, 62%, 89%);
+    font-weight: 100;
+}
+
+/* @media only screen and (max-width : 400px) {
+
+    .child{
+        display : flex;
+        flex-direction: column;
+
+    }
+
+    .container{
+        overflow: auto;
+
+    }
+
+    /* #box1{
+        flex : 1 1;
+    } */
+    /* #box2{
+        flex : 1;
+    }
+    #box3{
+        flex : 1;
+    }
+
+} */ 
+
+@media only screen and (max-width:400px) {
+    .container{
+        grid-template-rows: 1fr 1fr 1fr;
+        /* grid-template-columns: 1fr; */
+    grid-template-areas: 
+    'box1'
+    'box2'
+    'box3';
+
+    /* overflow-y: visible; */
+    /* overflow-x: visible;  */
+
+    height: 90vh;
+    width : 90vw;
+
+    margin: 10% auto;
+
+    /* text-size-adjust: ; */
+    }
+
+    .boxes{
+        /* height: 100vh; */
+    width : 100vw;
+    font-size: 0.86rem;
+
+    }
+
+    #box1{
+        
+        padding: 15px;
+        /* inline-size: min-content; */
+        /* white-space: wrap; */
+        /* container-type: inline-size; */
+        overflow-wrap: break-word;
+        /* height: fit-content; */
+    }
+
+    #box1 p{
+        /* text-align: center; */
+        font-size: 0.7rem;
+        /* overflow-wrap: break-word; */
+        /* word-break: break-all; */
+    }
+
+    #box1 h3{
+    
+        line-height: 1.5;
+    }
+
+
+    
+}
+

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin : 0;
+            padding : 0;
+        }
+
+        .container{
+            display : grid;
+            grid-template-areas: 
+            'box1 box1'
+            'box2 box3';
+            height: 500px;
+            width: 700px;
+
+            margin: 100px auto;
+        }
+
+        #box-1{
+            grid-area: box1;
+            background-color: yellow;
+            border: 2px solid black;
+        padding: 10px 23px;
+        /* background-color: wheat; */
+        }
+
+        #box-2{
+            grid-area: box2;
+            background-color: yellowgreen;
+            border: 2px solid black;
+        padding: 10px 23px;
+        /* background-color: wheat; */
+        }
+
+        #box-3{
+            grid-area: box3;
+            background-color: rgb(57, 219, 57);
+            border: 2px solid black;
+        padding: 10px 23px;
+        /* background-color: wheat; */
+        }
+
+        @media only screen and (max-width:400px) {
+            .container{
+            grid-template-areas: 
+            'box1 '
+            'box2'
+            'box3';
+
+            height: 90vh;
+            width : 90vw;
+
+            margin: 50px auto;
+            }
+
+
+
+            
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="box-1">this is box1</div>
+        <div id="box-2">this is box2</div>
+        <div id="box-3">this is box3</div>
+    </div>
+</body>
+</html>

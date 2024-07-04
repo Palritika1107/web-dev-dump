@@ -1,0 +1,46 @@
+body{
+    background-image: url('./images/favicon-32x32.png');
+    background-size: auto;
+}
+.container{
+
+    height: 500px;
+    width: 500px;
+    margin: auto;
+    position: relative;
+    top : 200px;
+    border-radius: 20px;
+    background-color: darkgreen;
+    
+
+}
+.child{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.boxes{
+    margin : 15px;
+
+}
+
+#box1{
+    background-color: aliceblue;
+    text-align: center;
+    /* height: 200px;
+    width : 1000px; */
+}
+#box2{
+background-color: #4abebd;
+text-align: center;
+/* height: 200px;
+width: 500px; */
+}
+
+#box3{
+background-color:  hsl(179, 62%, 43%);
+
+text-align: center;
+/* height: 200px;
+width: 500px;; */
+}

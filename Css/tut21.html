@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display : flex;
+        }
+        .box{
+            border : 2px solid red;
+            padding : 15px 15px;
+            margin : 13px 10px;
+            /* box-shadow: 10px 13px 10px 3px green; */
+
+            /* for shadow to move inside box */
+            /* box-shadow : inset 10px 13px green;   */
+
+            /* for multiple shadows */
+            box-shadow: 10px 13px 10px 3px green , 30px 20px 10px 3px red;  
+           }
+
+           .container h3{
+            text-shadow: 2px 3px red;
+           }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="box" id="box-1">
+            <h3>Box-1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, quidem. Ducimus, ex recusandae. Excepturi ad aperiam ipsam earum molestiae magnam qui ratione dolore? Veniam minima quisquam velit magnam accusantium deleniti at ea illo dolore?</p>
+        </div>
+
+        <div class="box" id="box-2">
+            <h3>Box-2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, quidem. Ducimus, ex recusandae. Excepturi ad aperiam ipsam earum molestiae magnam qui ratione dolore? Veniam minima quisquam velit magnam accusantium deleniti at ea illo dolore?</p>
+        </div>
+
+        <div class="box" id="box-3">
+            <h3>Box-3</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, quidem. Ducimus, ex recusandae. Excepturi ad aperiam ipsam earum molestiae magnam qui ratione dolore? Veniam minima quisquam velit magnam accusantium deleniti at ea illo dolore?</p>
+        </div>
+
+    </div>
+</body>
+</html>

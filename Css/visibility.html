@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .item{
+            font-size: 10px;
+            background-color: brown;
+            color: white;
+            display: none;
+            
+        }
+
+        @media (max-width:300px) {
+
+            #item-1{
+                display : block;
+                background-color: green;
+                color:white;
+            }
+            
+        }
+         @media (min-width:300px)  and (max-width:500px){
+
+            #item-2{
+                display : block;
+                background-color: yellow;
+                color:white;
+            }
+            
+        }
+
+         @media (min-width:500px)  and (max-width:800px) {
+
+            #item-3{
+                display : block;
+                background-color: pink;
+                color:white;
+            }
+            
+        }
+
+         @media (min-width:800px) {
+
+            #item-4{
+                display : block;
+                background-color: violet;
+                color:white;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="item" id="item-1">this is a mobile</div>
+    <div class="item" id="item-2">this is a tablet</div>
+    <div class="item" id="item-3">this is a desktop</div>
+    <div class="item" id="item-4">this is a wide screen laptop</div>
+</body>
+</html>

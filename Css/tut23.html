@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background: yellowgreen;
+        }
+
+        .box{
+            height : 250px;
+            width : 250px ;
+            position: relative;
+            background: green;
+            animation-name : second-try;
+            animation-duration: 2s;
+            animation-iteration-count: 3;
+            /* animation-fill-mode: alternate; */
+            /* animation-timing-function: ease-in-out; */
+            /* animation-delay: 3s; */
+
+            /* animation-direction: reverse; */
+        }
+
+        @keyframes second-try{
+            0%{
+                top : 0px;
+                left : 0px;
+            }
+            25%{
+                top : 250px;
+                left : 0px;
+            }
+            75%{
+                top : 250px;
+                left : 250px;
+
+            }
+            100%{
+                top : 0px;
+                left : 250px;
+            }
+
+        }
+        @keyframes first-try{
+            from{
+                width : 200px;
+
+            }
+
+            to{
+
+                width : 1000px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h3>this is a box</h3>
+        </div>
+    </div>
+</body>
+</html>
