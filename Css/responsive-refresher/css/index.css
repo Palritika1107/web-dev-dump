@@ -1,5 +1,266 @@
 /* css reset */
 
 *{
-    margin : 0px;
+    margin : 0;
+    padding : 0;
 }
+
+/* CSS Variables */
+:root {
+
+    --navbar-height : 59px;
+}
+
+/* Navigation Bar */
+#navbar{
+
+    display : flex;
+    align-items : center;
+    /* background: black; */
+    position: relative;
+
+}
+
+#navbar::before{
+    content : "";
+    background: black;
+    z-index : -1;
+    position : absolute;
+    height : 100%;
+    width : 100%;
+    opacity: 0.5;
+}
+
+.logo{
+    margin : 10px 10px;
+}
+
+.logo img{
+
+
+    height : 65px;
+    margin : 20px 20px;
+}
+
+/* navigation bar listing style */
+
+#navbar ul{
+    display : flex;
+}
+
+#navbar ul li{
+
+    list-style :  none;
+    font-size: 1.3rem;
+
+}
+
+#navbar ul li a{
+
+
+    color : white;
+    /* background: pink; */
+    display : block;
+    padding : 3px 22px;
+    border-radius: 22px;
+    text-decoration: none;
+
+}
+
+#navbar ul li a:hover{
+
+
+    color : black;
+    background: white;
+
+}
+
+/* next section */
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items : center;
+    justify-content: center;
+    height : 910px;
+}
+
+.home::before{
+
+    content : "";
+    position : absolute;
+    width : 100%;
+    height : 100%;
+    background:url('../images/tower.jpg') no-repeat center center/cover;
+    z-index : -1;
+    opacity: 0.5;
+
+}
+/* services section */
+.services-container{
+
+    height :605px;
+}
+
+.services{
+    margin : 30px;
+    display: flex;
+}
+
+.services img{
+
+    /* height: 60%; */
+    /* width : 5%; */
+
+    height : 160px;
+
+    /* why on giving height and width in % text is going out and size of imgis also not proper */
+
+    display : block;
+    margin : auto;
+    
+}
+
+.services .box{
+    /* height : 100px; */
+    border : 2px solid red;
+    /* width : 400px; */
+    padding : 30px;
+    margin : 5px 79px;
+    border-radius: 28px;
+    background: #efebeb;
+
+}
+
+.services .box p{
+
+
+    font-family: "Oswald", sans-serif;
+
+}
+
+
+/* clients section */
+
+#clients-section{
+    height : 400px;
+    /* position: relative; */
+}
+
+#clients-section::before{
+
+    content : "";
+    position : absolute;
+    z-index : -1;
+    height : 44%;
+    width : 100%;
+    opacity: 0.5;
+    background: url('../images/macaron.jpeg')no-repeat center center/cover;
+
+
+}
+
+.clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item{
+    padding : 34px;
+}
+
+.client-item img{
+
+    height : 124px;
+    width : 124px;
+}
+
+/* contact us */
+
+#contact-section{
+
+    position: relative;
+}
+
+#contact-section::before{
+
+    content: "";
+    height : 100%;
+    width : 100%;
+    z-index : -1;
+    opacity: 0.4;
+    position: absolute;
+    background: url('../images/phone.webp');
+
+
+
+}
+
+.contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 34px;
+}
+
+.contact-box input,
+.contact-box textarea{
+
+    width : 100%;
+    padding : 0.5rem;
+    font-size: 1.1rem;
+    font-family: "Oswald", sans-serif;
+    border-radius: 9px;
+}
+
+.contact-box form{
+    width : 40%;
+}
+
+.contact-box label{
+    font-size : 1.3rem;
+}
+
+
+/* utility classes */
+
+.h-primary{
+
+    font-size: 3.8rem;
+    padding: 12px;
+    font-family: "Oswald", sans-serif;
+}
+
+.h-secondary{
+
+    font-family: "Oswald", sans-serif;
+}
+
+.btn{
+
+    border : 2px solid white;
+    font-size: 1.5rem;
+    padding : 2px 16px;
+    background: brown;
+    color : white;
+    cursor: pointer;
+
+}
+
+.center{
+
+    text-align: center;
+}
+
+/* footer */
+
+footer{
+
+    background: black;
+    color : white;
+    padding: 9px 22px;
+
+}
+
+
+
